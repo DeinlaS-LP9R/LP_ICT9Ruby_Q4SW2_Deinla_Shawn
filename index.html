@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>JavaScript Events and Functions</title>
+<style type="text/css">
+	body{
+		background: skyblue; // Changing background colors 
+	}
+	h1{
+		color: white;
+	}
+	input{
+		background: lightgoldenrodyellow; 
+		border-radius: 20px;
+		border-color: black;
+	}
+	img{
+		height: 150px;
+		width: 140px;
+	}
+	table{
+		border-radius: 20px;
+	}
+</style>
+</head>
+<body>
+	<br>
+	<center><img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Math_-_Idil_Keysan_-_Wikimedia_Giphy_stickers_2019.gif"></center>
+	<br>
+	<center><h1>➕ ➖ Basic Calculator ✖️ ➗</h1></center>
+	<form>
+		<br><center>
+		<input type="text" placeholder="Enter the first number" id="id1">
+		<br>
+		<input type="text" placeholder="Enter the second number" id="id2"><br>
+		<br>
+			<input type="submit" value="Multiply" onclick="compute()">
+			<input type="submit" value="Divide" onclick="divide()">
+			<input type="submit" value="Subtract" onclick="subtract()">
+			<input type="submit" value="Add" onclick="addition()"></center>
+	</form>
+	<script>
+		function compute() {
+			num1 = document.getElementById('id1').value;
+			num2 = document.getElementById('id2').value;
+			product = num1 * num2;
+				window.alert(product); // Multiplication
+		}
+		function divide() {
+		num1 = document.getElementById('id1').value;
+		num2 = document.getElementById('id2').value;
+		quotient = num1 / num2;
+		window.alert(quotient);			// Division
+		}
+		function subtract() {
+		num1 = document.getElementById('id1').value;
+		num2 = document.getElementById('id2').value;
+		difference = num1 - num2;
+		window.alert(difference);			// Subtraction
+		}
+		function addition() {
+		num1 = Number(document.getElementById('id1').value);
+		num2 = Number(document.getElementById('id2').value);
+		sum = num1 + num2;
+		window.alert(sum);			// Addition
+		}
+	</script>
+<br>
+<br>
+
+	<center>
+		<h6>A simple, two-number calculator that can multiply, divide, add or subtract up to <br> two different factors. <br> Simply input your numbers and press the button to get the answer!</h6>
+	</center>
+
+<br>
+<br>
+
+<center><table class="table-borderless" style="font-family:Corbel Light" border="0" cellpadding="4" cellspacing="1" bgcolor="darkblue"><tr><td><a href="https://upload.wikimedia.org/wikipedia/commons/e/e2/Math_-_Idil_Keysan_-_Wikimedia_Giphy_stickers_2019.gif" style="color:white";> GIF Source</a></td></tr></table><br></center>
+
+</body>
+</html>
